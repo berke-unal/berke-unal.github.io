@@ -7,12 +7,13 @@
   <style>
     body{font-family:system-ui,Segoe UI,Roboto,Arial,sans-serif;margin:0;}
     main{min-height:100vh;display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;gap:1rem;padding:2rem;}
-    img{width:200px;height:200px;border-radius:50%;object-fit:cover;}
+    /* show full image, no circle, no cropping */
+    img{max-width:300px;height:auto;border-radius:0;}
   </style>
 </head>
 <body>
   <main>
-    <img src="./me.jpeg" alt="Berke Ünal" loading="lazy">
+    <img src="me.jpeg" alt="Berke Ünal" loading="lazy">
     <h1>Berke Ünal</h1>
     <p>Welcome to my site!</p>
   </main>
