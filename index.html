@@ -9,6 +9,11 @@
     main{min-height:100vh;display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;gap:1rem;padding:2rem;}
     /* show full image, no circle, no cropping */
     img{max-width:300px;height:auto;border-radius:0;}
+
+    /* CV buttons */
+    .actions{display:flex;gap:.5rem;flex-wrap:wrap;justify-content:center;margin-top:.5rem}
+    .btn{display:inline-block;padding:.65rem 1rem;border:2px solid currentColor;border-radius:12px;text-decoration:none;font-weight:600}
+    .btn--ghost{border-style:dashed;opacity:.9}
   </style>
 </head>
 <body>
@@ -16,6 +21,13 @@
     <img src="me.jpeg" alt="Berke Ünal" loading="lazy">
     <h1>Berke Ünal</h1>
     <p>Welcome to my site!</p>
+
+    <p class="actions">
+      <a href="Oct2025_CV.pdf" target="_blank" rel="noopener" class="btn" aria-label="Open my CV (PDF)">
+        View CV (PDF)
+      </a>
+      <a href="Oct2025_CV.pdf" download class="btn btn--ghost">Download</a>
+    </p>
   </main>
 </body>
 </html>
